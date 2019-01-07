@@ -1,0 +1,187 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333">
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:background="#ff9f00"
+        android:gravity="top"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/loggedInName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:letterSpacing="0.02"
+            android:textColor="#ffffff"
+            android:textSize="19.5sp" />
+
+        <ImageView
+            android:id="@+id/ivonhold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/loggedInName"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/on_hold" />
+
+        <TextView
+            android:id="@+id/Kick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="15dp"
+            android:letterSpacing="0.02"
+            android:text="Kick"
+            android:textColor="#000000"
+            android:textSize="19.5sp" />
+
+        <ImageView
+            android:id="@+id/mic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/mic" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_below="@+id/ll"
+        android:layout_marginTop="2dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:background="#ff9f00"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvCC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19.5sp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"
+            android:text="Card Collector"
+            />
+        <TextView
+            android:id="@+id/kick2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19.5sp"
+            android:textColor="#000000"
+            android:letterSpacing="0.02"
+            android:text="Kick"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="280dp"
+            />
+
+        <ImageView
+            android:id="@+id/mic2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/mic"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="15dp"/>
+    </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/ll2"
+    android:padding="10dp"
+    android:layout_marginTop="10dp">
+
+    <ImageView
+        android:id="@+id/imageMmc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/mmc"
+        android:layout_below="@+id/ll2"
+        android:layout_marginTop="15.5dp"
+        />
+</LinearLayout>
+
+    <LinearLayout
+       android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="3">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/end_call"
+        android:visibility="gone" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Enter recipient name"
+        android:textAllCaps="true"
+        android:visibility="gone"
+        android:id="@+id/textView" android:layout_gravity="center_horizontal"
+        android:textColor="@color/sinch_purple" android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/callName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="32sp"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:textColor="@color/sinch_purple"
+        android:background="@drawable/inputbox" android:inputType="textNoSuggestions">
+
+        <requestFocus/>
+    </EditText>
+    <Button
+        android:id="@+id/callButton"
+        android:layout_width="wrap_content"
+        android:layout_height="86dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_call"
+        android:minWidth="132dp"
+        android:minHeight="56dp" />
+
+    <Button
+        android:id="@+id/Logout"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:text="LOGOUT"
+        android:textStyle="bold"
+        android:background="#ff9f00"
+        android:visibility="visible"/>
+</RelativeLayout>

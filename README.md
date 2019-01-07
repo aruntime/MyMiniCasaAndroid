@@ -1,0 +1,3 @@
+# minicasa-poc
+
+Like Skype, we need to dial a phone number which rings to your mobile phone and the application has an answer button. Once we take the call we need to call in another party to have three of us on the phone. The third person needs to be able to hang up on one of the users(in this case the agent who started the call). This will end up being built on android and ios so if we can do it in a JS framework and deploy that is helpful but if the inherent phone stuff has to be native we can explain that to the client.

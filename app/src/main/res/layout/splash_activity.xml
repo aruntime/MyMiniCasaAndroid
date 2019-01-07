@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/sa_relativelayout"
+    android:layout_height="match_parent"
+    tools:context=".Splash_Activity">
+
+
+
+
+
+
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/sa_kenburns_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center"
+        android:src="@mipmap/splash_back"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@color/halfTransferent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/sa_casa_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/casa_splash_ic" />
+
+    <ImageView
+        android:id="@+id/sa_mini_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sa_casa_ic"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="-1dp"
+        android:background="@mipmap/mini_splash_ic" />
+
+    <ImageView
+        android:id="@+id/sa_my_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_above="@+id/sa_casa_ic"
+        android:layout_toStartOf="@+id/sa_mini_ic"
+        android:layout_marginBottom="5dp"
+        android:background="@mipmap/my_splash_ic" />
+
+
+</RelativeLayout>

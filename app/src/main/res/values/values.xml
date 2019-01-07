@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    {
+    "method" : "conferenceCallout",
+    "conferenceCallout" :
+    {
+    "cli" : "+919986351005",
+    "destination" : { "type" : "number", "endpoint" : "+919986351005" },
+    "domain" : "pstn",
+    "locale" : "en-US",
+    "greeting" : "Welcome to my conference",
+    "conferenceId" : "myConference",
+    "enableAce": false,
+    "enableDice" : false
+    }
+    }
+</resources>
